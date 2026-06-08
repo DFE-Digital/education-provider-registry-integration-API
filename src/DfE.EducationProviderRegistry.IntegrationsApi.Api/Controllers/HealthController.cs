@@ -6,8 +6,8 @@ namespace DfE.EducationProviderRegistry.IntegrationsApi.Api.Controllers;
 [Route("[controller]")]
 public class HealthController : ControllerBase
 {
-    [HttpGet("health", Name = "HealthCheck")]
-    public IActionResult Health()
+    [HttpGet(Name = "HealthCheck")]
+    public IActionResult Index()
     {
         return Ok(new
         {
